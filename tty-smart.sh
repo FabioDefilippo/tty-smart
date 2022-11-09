@@ -28,15 +28,15 @@ do
    exit 0
   ;;
   "create_folder")
-   read -e -p "new-file name: " SFILE
+   read -e -p "new-folder name: " SFILE
    mkdir "$SFILE"
   ;;
   "vim")
-   read -e -p "to: " SFILE
+   read -e -p "filename: " SFILE
    vim "$SFILE"
   ;;
   "nano")
-   read -e -p "to: " SFILE
+   read -e -p "filename: " SFILE
    nano -l "$SFILE"
   ;;
   "details")
@@ -47,15 +47,15 @@ do
    do
     case "$PERMESSO" in
      "write")
-      read -e -p "to: " SFILE
+      read -e -p "filename: " SFILE
       chmod +w "$SFILE"
      ;;
      "read")
-      read -e -p "to: " SFILE
+      read -e -p "filename: " SFILE
       chmod +r "$SFILE"
      ;;
      "execute")
-      read -e -p "to: " SFILE
+      read -e -p "filename: " SFILE
       chmod +x "$SFILE"
      ;;
     esac
@@ -67,15 +67,15 @@ do
    do
     case "$PERMESSO" in
      "write")
-      read -e -p "to: " SFILE
+      read -e -p "filename: " SFILE
       chmod -w "$SFILE"
      ;;
     "read")
-     read -e -p "to: " SFILE
+     read -e -p "filename: " SFILE
      chmod -r "$SFILE"
     ;;
     "execute")
-     read -e -p "to: " SFILE
+     read -e -p "filename: " SFILE
      chmod -x "$SFILE"
    ;;
    esac

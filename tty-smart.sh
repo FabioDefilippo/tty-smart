@@ -28,7 +28,7 @@ do
    exit 0
   ;;
   "create_folder")
-   read -e -p "to: " SFILE
+   read -e -p "new-file name: " SFILE
    mkdir "$SFILE"
   ;;
   "vim")

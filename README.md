@@ -1,5 +1,5 @@
 # tty-smart
-this bash script will help you to manage files and folder in tty console
+this bash script enables mouse in tty console and will help you to manage files and folder!
 
 ## ATTENTION:
 <strong>this script will use sudo to install GPM and run this service;</strong>

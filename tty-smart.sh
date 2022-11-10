@@ -1,8 +1,12 @@
+#!/bin/bash
+#Author: Fabio Defilippo
+#email: 4starfds@gmail.com
+
 if [[ ! -f $(which gpm) ]];
 then
  sudo apt install gpm -y
 fi
-sudo service gpm start || sudo service gpm restat
+sudo service gpm start || sudo service gpm restart
 clear
 while [ true ];
 do

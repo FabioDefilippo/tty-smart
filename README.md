@@ -9,7 +9,8 @@ this bash script will help you to manage files and folder in tty console
 ```
 ./tty-smart
 ```
-
 2. use numeric options to interact;
 
-3. use the option 'exit' to quit (gpm service will stop);
+3. use the left button of yout touchpad or mouse to select and copy a filename, then the right button to paste in your option;
+
+4. use the option 'exit' to quit (gpm service will stop);

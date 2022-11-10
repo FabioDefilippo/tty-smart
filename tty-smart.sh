@@ -4,7 +4,18 @@
 
 if [[ ! -f $(which gpm) ]];
 then
- sudo apt install gpm -y
+ if [[ -f $(which apt) ]];
+ then
+  sudo apt install gpm -y
+ elif [[ -f $(which yum) ]];
+ then
+  sudo yum install gpm
+ elif [[ -f $(which pacman) ]];
+ then
+  sudo pacman -S gpm
+ else
+  echo "I can not find a packet manager"
+ fi
 fi
 sudo service gpm start || sudo service gpm restart
 clear

@@ -7,9 +7,6 @@ then
 	if [[ -f $(which apt) ]];
 	then
 		sudo apt install gpm -y
-	elif [[ -f $(which yum) ]];
-	then
-		sudo yum install gpm
 	elif [[ -f $(which pacman) ]];
 	then
 		sudo pacman -S gpm
